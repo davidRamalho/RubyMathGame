@@ -1,0 +1,11 @@
+classes : players, questions, scores, turns, game
+
+game - Contains turns. Contains players
+
+player- play the game - i.e. can answer questions, have scores (see scores).  
+
+question - produce question objects. Have a correct answer. 
+
+score - keep track of players lives. Lowered by one when a question is answered incorrectly. 
+
+turns - Initialize question, prompts player for answer. Alternates between players. 
