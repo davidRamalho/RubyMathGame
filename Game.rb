@@ -59,12 +59,12 @@ class Game
 
   def end_game
     if @player1.lives.zero?
-      puts "#{@player2.name} wins!!! And still has #{@player2.lives}/3!"
-      puts "Shame on you #{@player1.name}."
+      puts "#{@player2.name} wins!!! And still has #{@player2.lives}/3 lives remaining!"
+      puts "Shame on you #{@player1.name}. YOU LOSE!"
     exit(0)
     else
-      puts "#{@player1.name} wins!!! And still has #{@player1.lives}/3!"
-      puts "Shame on you #{@player2.name}."
+      puts "#{@player1.name} wins!!! And still has #{@player1.lives}/3 lives remaining!"
+      puts "Shame on you #{@player2.name}. YOU LOSE!"
     exit(0)
     end
   end
