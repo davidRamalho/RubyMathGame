@@ -1,17 +1,10 @@
-class Question
-  def initialize 
-    num = (1..10).to_a
-    @num1 = num.shuffle[0]
-    @num2 = num.shuffle[0]
+  def new_question
+    @num1 = rand 1..20
+    @num2 = rand 1..20
     ops = %w(+ - / *)
     @op1 = ops.sample
     @question = "#{@num1.to_f} #{@op1} #{@num2.to_f}"
-    expression = "What does #{@num1.to_f} #{@op1} #{@num2.to_f} equal?"
-    puts expression
+    @expression = "#{@player_turn}, what does #{@num1.to_f} #{@op1} #{@num2.to_f} equal?"
+    puts @expression
+    new_answer
   end
-  
-  def check
-    solution = "The correct answer is #{(eval(@question).to_f).round(1)}!"
-    puts solution
-  end
-end
