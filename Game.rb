@@ -27,7 +27,7 @@ class Game
       puts @solution
       check_player_lives
     end
-    puts "#{@player1} #{@player1.lives}/3 vs #{@player2} #{@player2.lives}/3"
+    puts "The Current Score is #{@player1.name} #{@player1.lives}/3 vs #{@player2.name} #{@player2.lives}/3"
     game_continue_or_end
   end
 
